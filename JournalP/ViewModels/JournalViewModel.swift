@@ -15,22 +15,13 @@ extension Color {
         self.init(.sRGB, red: r, green: g, blue: b, opacity: 1.0)
     }
     
-    static let appPrimary = Color(hex: "7F81FF")          // Primary / Accent (#7F81FF)
-    static let appTextAccent = Color(hex: "AF99FD")       // Text / Accent (#AF99FD)
-    static let appTextPrimary = Color(hex: "FFFFFF")      // Text / Primary (#FFFFFF)
-    static let appTextSecondary = Color(hex: "A39A9A")    // Text / Secondary (#A39A9A)
-    static let appSurfaceCard = Color(hex: "1C1C1E")      // Surface / Card (#1C1C1E)
-    static let appBackground = Color(hex: "000000")       // Background / Primary (#000000)
-    static let appDestructive = Color(hex: "FD453C")      // Semantic / Destructive (#FD453C)
-}
-
-// MARK: - Data Model
-struct JournalEntry: Identifiable, Codable, Equatable {
-    var id = UUID()
-    var title: String
-    var content: String
-    var date: Date
-    var isBookmarked: Bool = false
+    static let appPrimary = Color(hex: "7F81FF")
+    static let appTextAccent = Color(hex: "AF99FD")
+    static let appTextPrimary = Color(hex: "FFFFFF")
+    static let appTextSecondary = Color(hex: "A39A9A")
+    static let appSurfaceCard = Color(hex: "1C1C1E")
+    static let appBackground = Color(hex: "000000")
+    static let appDestructive = Color(hex: "FD453C")
 }
 
 // MARK: - ViewModel
